@@ -1,0 +1,55 @@
+{
+  "name": "blink-clone-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Blink.new clone - AI-powered code generation platform",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "db:migrate": "tsx src/database/migrate.ts",
+    "db:seed": "tsx src/database/seed.ts"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "sqlite3": "^5.1.6",
+    "openai": "^4.28.0",
+    "anthropic": "^0.20.0",
+    "stripe": "^14.21.0",
+    "nodemailer": "^6.9.8",
+    "archiver": "^6.0.1",
+    "uuid": "^9.0.1",
+    "joi": "^17.12.0",
+    "rate-limiter-flexible": "^4.0.1",
+    "ws": "^8.16.0",
+    "dotenv": "^16.4.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/multer": "^1.4.11",
+    "@types/node": "^20.11.17",
+    "@types/uuid": "^9.0.7",
+    "@types/ws": "^8.5.10",
+    "@types/archiver": "^6.0.2",
+    "@types/nodemailer": "^6.4.14",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "ai",
+    "code-generation",
+    "backend",
+    "api",
+    "typescript"
+  ],
+  "author": "Blink Clone",
+  "license": "MIT"
+}
